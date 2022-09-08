@@ -9,7 +9,6 @@ from nobot.core import Test
 my_captcha = Test(case_sensitive = False, strictness = 2)
 
 captcha_img = my_captcha.generate_img()
-captcha_audio = my_captcha.generate_audio()
 
 captcha_img.save('mycaptchaimg', format = 'png')
 captcha_img_bytes = captcha_img.to_bytes()
