@@ -11,8 +11,21 @@ my_captcha = Test(case_sensitive = False, strictness = 2)
 captcha_img = my_captcha.generate_img()
 
 captcha_img.save('mycaptchaimg', format = 'png')
-captcha_img_bytes = captcha_img.to_bytes()
 ```
+__________
+# Why use Turing over something else?
+* Turing is a 100% Pythonic library. It follows PEP-8 (most of the time). So, your odds of being cyberbullied by a veteran Pythonista are very low.
+
+* Turing does not use fancy AI or anything to test whether your users are a robot or not, making it very fast, light, and plug-and-play esque.
+
+* We have a huge library of words, which is also being constantly updated. If you find it insufficient, you can always use an online API, and the `turing.dictionary.Dictionary` class has full support for it.
+
+* And best of all, it does not use your users' data to build self-driving cars that crash into a wall 99% of the time. (wink wink, we all know who does that.)
+___________
+# Roadmap
+* Add image distortion based on strictness level.
+* Add audio support, possibly via FFMPEG.
+* Extract the most performance out of the code as possible.
 ___________
 # Where's the random word dictionary?
 You can add your own dictionary set of random words using `turing.core.Test.add_dictionary()`,

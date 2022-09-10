@@ -9,9 +9,9 @@ class Dictionary:
     def __init__(self):
         self.dictionary = []
 
-        for _item in os.listdir('./nobot/dictionary/predefined'):
-            if os.path.isfile('./nobot/dictionary/predefined/'+_item):
-                self.add_file('./nobot/dictionary/predefined/'+_item)
+        for _item in os.listdir('./turing/dictionary/predefined'):
+            if os.path.isfile('./turing/dictionary/predefined/'+_item):
+                self.add_file('./turing/dictionary/predefined/'+_item)
 
 
     def add_file(self, file: str):
