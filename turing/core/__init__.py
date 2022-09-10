@@ -1,5 +1,5 @@
-from nobot.image_gen import generate_captcha_image
-from nobot.dictionary import Dictionary
+from turing.image_gen import generate_captcha_image
+from turing.dictionary import Dictionary
 
 class Test:
     def __init__(self, dictionary, case_sensitive: bool = True, text: str = None, strictness: int = 4):
